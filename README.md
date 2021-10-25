@@ -1,5 +1,18 @@
+[Data types](#data-types)
+
+[Pointers](#pointers)
+
+[Memory management](#memory-management)
+
+[Structures](#structures)
+
+[Class](#class)
+
+[Others](#others)
+
 
 # Data types
+
 ```
 Byte = 8bits
 00000001 1 = 1                    Hexadecimal
@@ -82,7 +95,7 @@ temp = *p
 
 
 ----------------------------------
-#  Memory management
+# Memory management
 
 Object: region of memory that can be examined and stored into | kind of variables
 
