@@ -17,7 +17,12 @@ int       = 2 or 4 bytes
 long int  = 4 bytes
 ```
 ## Arrays and Vectors
-**Array** 
+- **Array** Needs to set size. Do not keep track of their size as they are a pointer to a designated memory space of assigned size `dataType arrayName[arraySize];` Handle with care when passed to a function as what is passed is just a pointer to first address.  
+- **Templatized Array** 
+- **Vector** Need to #include <vector> with C++11| Better and simplier as they keep track of their own size. Can also be expanded in size or values can be "popped" from it. 
+	`std::vector<int> V; V.push_back(1); /* Created empty int vector and then added integer 1/*`
+
+
 ### Casting
 ```(type) varialbe```
 
@@ -140,6 +145,11 @@ Really similar to structures but elements are defined as **private**
 
 --------
 # Others
+### Lops
+- for: simple loop, if condition is met. Has an initialization condition --> condition check > increment 
+- while: does not have initialization condition
+- do, while: ensures at least one run of the code
+
 
 ### Enums
 Easy way to construct defined macros for consecutive and related values.
@@ -157,3 +167,9 @@ For header files use: `#pragma once`
 #define MACRO
 ...
 #endif`
+
+### Namespace
+Tag for a package to make clear to which library an element is referring to. Can be ignored by setting Ex. `using namespace std;` though is not recommended as this namespaces make refferences clearer.
+	
+----
+### Makefiles
