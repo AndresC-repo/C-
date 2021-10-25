@@ -1,14 +1,19 @@
-[Data types](#data-types)
+- [Data types](#data-types)
 
-[Pointers](#pointers)
+- [Pointers](#pointers)
 
-[Memory management](#memory-management)
+- [Memory management](#memory-management)
 
-[Structures](#structures)
+- [Structures](#structures)
 
-[Class](#class)
+- [Class](#class)
 
-[Others](#others)
+- [Others](#others)
+  + Loops
+  + Enums
+  + Includes
+  + Namespace
+  + Makefiles
 
 
 # Data types
