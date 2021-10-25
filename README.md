@@ -194,8 +194,8 @@ Tag for a package to make clear to which library an element is referring to. Can
 Makefiles are scripts that allow compilation of multiple cpp files, declaring dependencies.
 from file.cpp ->  file.o  -> app.out
 Called with command `make` and the objective is to create an output executable file.
-`
-target: dependencies
 	
-    action
-`
+```
+target: dependencies
+	action
+```
