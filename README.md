@@ -199,3 +199,20 @@ Called with command `make` and the objective is to create an output executable f
 target: dependencies
 	action
 ```
+
+## Passing arguments to functions
+- Passing by **VALUE**: Parameter value copies to another variable thus modifications done to this variable are not present in original variable.
+	
+`int var=5;
+sum_one(var); // function returns var++
+cout<< var; // prints value of 5
+`
+	
+- Passing by **REFERENCE**: Passes actual paramenter to fucntion, this is done by passing the address where variable is stored and dereferencing its value.
+
+`int var=5;
+sum_one(&var); // function returns *var++
+cout<< var; // prints value of 5
+`
+
+- Passing by **POINTER**: Mostly done by passing arrays. Passes a pointer to the first address of the array.
