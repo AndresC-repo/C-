@@ -217,3 +217,7 @@ cout<< var; // prints value of 5
 `
 
 - Passing by **POINTER**: Mostly done by passing arrays. Passes a pointer to the first address of the array.
+
+	
+## Notes:
+- Handle Branching with care as it could be expensive for some compilers: *"A branch is an instruction in a computer program that can cause a computer to begin executing a different instruction sequence and thus deviate from its default behavior of executing instructions in order"*.
