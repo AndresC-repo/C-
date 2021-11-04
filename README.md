@@ -190,7 +190,21 @@ For header files use: `#pragma once`
 ### Namespace
 Tag for a package to make clear to which library an element is referring to. Can be ignored by setting Ex. `using namespace std;` though is not recommended as this namespaces make refferences clearer.
 	
-----
+### Main
+Basic main serves as the initial point of any program. It is important to define one and by default this is done by the main fucntion.
+On it's basic form takes no argument but returns an integer (commonly 0 to refer that program as ran and finished without problems).
+```int main(){ return0;} ```
+It can also be that we want to run the program while passing arguments from the start, that is done by passing these arguments to the main function. It stores the amount in int argc and stores the values in an array argv)
+
+```
+int main(int argc, char** argv) {
+    std::cout << "Have " << argc << " arguments:" << std::endl;
+    for (int i = 0; i < argc; ++i) {
+        std::cout << argv[i] << std::endl;
+    }
+}	
+```
+					 
 ### Makefiles
 Makefiles are scripts that allow compilation of multiple cpp files, declaring dependencies.
 from file.cpp ->  file.o  -> app.out
@@ -221,3 +235,4 @@ cout<< var; // prints value of 5
 	
 ## Notes:
 - Handle Branching with care as it could be expensive for some compilers: *"A branch is an instruction in a computer program that can cause a computer to begin executing a different instruction sequence and thus deviate from its default behavior of executing instructions in order"*.
+
