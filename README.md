@@ -1,5 +1,7 @@
 - [Data types](#data-types)
 
+- [Keywords](#keywords)
+
 - [Pointers](#pointers)
 
 - [Memory management](#memory-management)
@@ -13,6 +15,7 @@
   + Enums
   + Includes
   + Namespace
+  + Main
   + Makefiles
   + Passing args
 
@@ -66,6 +69,20 @@ time >> 5
 time is short int therefore 0xFFFF
 0x3F = 0011 1111 & with 0x3F
 ```
+---------------------------------------------------------
+# Keywords
+	
+- **auto**: for c++ it deduces the type from context
+- **const**: Tells compiler that a variable is immutable.
+Examples: 
+	+ void display_array(const int arr[], int sz); fucntion getting an array that should not be modified (just displayed) 
+	+ class test { void foo() const {} }; members of class that won't modify its elements
+- **mutable**: a member that is not const, even when it is the data member of a const object.
+- **register**: hint to compiler to provide fast access to a variable.
+- **typedef**: defines new name for an existing type.
+- **volatile**: Value in memory location can be modified by ways not know to compiler, avoiding optimization.
+
+
 
 ---------------------------------------------------------
 # Pointers
