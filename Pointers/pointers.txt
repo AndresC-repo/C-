@@ -1,0 +1,32 @@
+/* Smart pointers
+* Three different pointers{ std::unique_ptr, std::shared_ptr and std::weak_ptr}
+*
+* Class that wraps around a simple pointer to manage the lifetime of the object being pointed to
+* Raw pointers : programmer has to explicitly destroy object when not useful anymore
+* (new + delete)
+*
+
+
+*
+* Smart pointer: defines a policy as when the object is destroyed
+* + unique: are destroyed when it goes out of scope. As it cannot be copied it is easy to handle and should always be employed for simple pointers.
+* These pointers can be swaped or moved but they only point to one object at a time.
+* Good for handling dynamically allocated objects in restricted scope
+
+* + shared: they have a counter of references. Pointed object is not re-created or copied, it is pointed by another pointer, hence, shared.
+* This keeps count of how many times the object pointed to is being referenced and will only be destroyed when the counter reaches zero.
+* Reference counter used to store and pass a reference beyond the scope of a function.
+* useful in the context of OOP, store a pointer as a member variable and return it to access the referenced value.
+*
+* + weak: Useful for observing. Not to take ownership of the pointer instance.
+* Similar to shared pointer but does not increment the reference counter.
+*/
+
+
+
+//	unique_ptr<Entity> entity(new Entity());
+
+
+/* Notes:
+ * auto entity = make_unique<Entity>();
+ * we can use auto keyword to infere the type */

@@ -3,5 +3,5 @@ Fantasy*
 Test*
 
 # Compiled objects
-a.out
+*.out
 
