@@ -5,3 +5,6 @@ Test*
 # Compiled objects
 *.out
 
+# Images
+*.jpg
+*.png
